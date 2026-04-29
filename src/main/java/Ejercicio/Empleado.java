@@ -6,13 +6,18 @@ public abstract class Empleado {
 
     private static int nroDeLegajo = 1;
     
-    private int legajo;
-    private String nombre;
-    private String apellido;
-    private Date fechaDeNacimiento;
-    private String telefono;
-    private String direccion;
-    private String mail;
+    protected final double jubilacion       = 0.11;
+    protected final double pami             = 0.03;
+    protected final double obraSocial       = 0.03;
+    protected final double cuotaSindical    = 0.02;
+    
+    private int     legajo;
+    private String  nombre;
+    private String  apellido;
+    private Date    fechaDeNacimiento;
+    private String  telefono;
+    private String  direccion;
+    private String  mail;
 
     public Empleado(String nombre, String apellido, Date fechaDeNacimiento,
                     String telefono, String direccion, String mail) {
@@ -26,9 +31,7 @@ public abstract class Empleado {
         this.mail = mail;
     }
 
-    public double calcularSueldoBruto() {
-        return 0;
-    }
+    abstract double calcularSueldoBruto();
 
     public double calcularDescuento() {
         return 0;

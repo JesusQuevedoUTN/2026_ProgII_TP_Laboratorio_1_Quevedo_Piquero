@@ -4,10 +4,10 @@ import java.util.Date;
 
 public class Marketing extends Empleado {
 
-    private String horario;
+    private Turnos horario;
     private double sueldoFijo = 50000.0;
 
-    public Marketing(String horario, String nombre, String apellido, 
+    public Marketing(Turnos horario, String nombre, String apellido, 
                     Date fechaDeNacimiento, String telefono, 
                     String direccion, String mail) {
         super(nombre, apellido, fechaDeNacimiento, telefono, direccion, mail);
