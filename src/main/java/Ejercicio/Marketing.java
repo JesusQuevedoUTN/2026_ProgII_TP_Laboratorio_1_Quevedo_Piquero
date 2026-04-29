@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Ejercicio;
 
-/**
- *
- * @author Alumno
- */
-public class Marketing extends Empleado{
+public class Marketing extends Empleado {
+
+    private String horario;
+    private double sueldoFijo = 50000.0;
     
+    @Override
+    public double calcularSueldoBruto() {
+        return 0;
+    }
 }

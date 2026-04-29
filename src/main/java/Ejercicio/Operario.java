@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Ejercicio;
 
-/**
- *
- * @author Alumno
- */
-public class Operario extends Empleado{
-    
+public class Operario extends Empleado {
+
+    private String area;
+    private String puesto;
+    private int horasTrabajadas;
+    private double valorPorHora = 120.0;
+
+    @Override
+    public double calcularSueldoBruto() {
+        return 0;
+    }
 }

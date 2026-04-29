@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Ejercicio;
 
-/**
- *
- * @author Alumno
- */
-public class Vendedor extends Empleado{
+
+public class Vendedor extends Empleado {
+
+        private String medioVenta;
+        private double totalVentasMes; 
+        private double sueldoBase = 30000.0;
+        private double comision = 0.002;
     
+    @Override
+    public double calcularSueldoBruto() {
+        return 0;
+    }
 }
