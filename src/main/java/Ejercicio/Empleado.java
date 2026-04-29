@@ -1,0 +1,19 @@
+package Ejercicio;
+
+import java.util.Date;
+
+public abstract class Empleado {
+   private int legajo;
+   private String nombre;
+   private String apellido;
+   private Date fechaDeNacimiento;
+   private String telefono;
+   private String direccion;
+   private String mail;
+   
+   public double calcularSueldoBruto(){
+       
+   }
+   
+   public
+}
