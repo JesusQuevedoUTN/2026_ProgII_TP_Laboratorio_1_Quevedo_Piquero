@@ -22,6 +22,8 @@ public class Vendedor extends Empleado {
         
     @Override
     public double calcularSueldoBruto() {
-        return 0;
+        double sueldo = 0;
+        sueldo = sueldoBase + (totalVentasMes * comision);
+        return sueldo;
     }
 }

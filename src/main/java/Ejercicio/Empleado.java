@@ -34,10 +34,10 @@ public abstract class Empleado {
     abstract double calcularSueldoBruto();
 
     public double calcularDescuento() {
-        return 0;
+        return calcularSueldoBruto() * 0.19;
     }
 
     public double calcularSueldoNeto() {
-        return 0;
+        return calcularSueldoBruto() - calcularDescuento();
     }
 }

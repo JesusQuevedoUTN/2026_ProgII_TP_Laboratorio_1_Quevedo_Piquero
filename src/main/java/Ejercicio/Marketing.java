@@ -18,6 +18,6 @@ public class Marketing extends Empleado {
     
     @Override
     public double calcularSueldoBruto() {
-        return 0;
+        return sueldoFijo;
     }
 }

@@ -21,6 +21,8 @@ public class Operario extends Empleado {
     
     @Override
     public double calcularSueldoBruto() {
-        return 0;
+        double sueldo = 0;
+        sueldo = horasTrabajadas * valorPorHora;
+        return sueldo;
     }
 }
