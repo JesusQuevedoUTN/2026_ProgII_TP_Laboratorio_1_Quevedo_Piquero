@@ -34,16 +34,8 @@ public class Main {
         empleados.add(new Vendedor("Web", 4800000, "Sofia", "Blanco", new Date(), "7722", "Online", "sofia@meg.com"));
         empleados.add(new Vendedor("Telefónico", 1200000, "Roberto", "Vaca", new Date(), "7733", "Call Center", "roberto@meg.com"));
 
-        // --- SALIDA POR CONSOLA ---
-        System.out.println("=================================================================================");
-        System.out.println("SISTEMA DE LIQUIDACIÓN MEG INSUMOS S.A.");
-        System.out.println("=================================================================================");
-        System.out.printf("%-10s | %-18s | %-12s | %-12s | %-12s%n", "LEGAJO", "NOMBRE", "BRUTO", "DESCUENTO", "NETO");
-        System.out.println("---------------------------------------------------------------------------------");
-
-        
-        // esta parte fuimos nosotros porque la hizo horrible 
-        
+        // Esta parte sí fuimos nosotros porque la hizo horrible y mareaba con cosas que no hicimos
+        System.out.println("--- LISTA DE EMPLEADOS ---");
         for (Empleado e : empleados) {
             double bruto = e.calcularSueldoBruto();
             double descuento = e.calcularDescuento();
@@ -53,6 +45,8 @@ public class Main {
             System.out.println("Sueldo Bruto:" + e.calcularSueldoBruto());
             System.out.println("Total de aportes:" + e.calcularDescuento());
             System.out.println("Sueldo Neto:" + e.calcularSueldoNeto());
+            
+            System.out.println("");
         }
     }
 }
