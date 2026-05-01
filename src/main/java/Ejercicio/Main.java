@@ -41,27 +41,18 @@ public class Main {
         System.out.printf("%-10s | %-18s | %-12s | %-12s | %-12s%n", "LEGAJO", "NOMBRE", "BRUTO", "DESCUENTO", "NETO");
         System.out.println("---------------------------------------------------------------------------------");
 
+        
+        // esta parte fuimos nosotros porque la hizo horrible 
+        
         for (Empleado e : empleados) {
-            // Utilizamos los métodos de cálculo definidos en tu clase Empleado
             double bruto = e.calcularSueldoBruto();
             double descuento = e.calcularDescuento();
             double neto = e.calcularSueldoNeto();
 
-            // Imprimimos una fila por empleado
-            System.out.printf("%-10s | %-18s | $%-11.2f | $%-11.2f | $%-11.2f%n",
-                    "LEG-" + String.format("%03d", empleados.indexOf(e) + 1), // Simulación visual de legajo
-                    e.getClass().getSimpleName().substring(0, 1) + ". " + e.getClass().getSimpleName(), // Tipo de empleado
-                    bruto, descuento, neto);
-
-            // Si quieres ver el detalle completo de cada uno usando tu método mostrarEmpleado():
-            // e.mostrarEmpleado(); 
-            // System.out.println("Sueldo Neto: $" + neto + "\n-----------------------");
-        }
-
-        System.out.println("- Linea -");
-
-        for (Empleado e : empleados) {
             e.mostrarEmpleado();
+            System.out.println("Sueldo Bruto:" + e.calcularSueldoBruto());
+            System.out.println("Total de aportes:" + e.calcularDescuento());
+            System.out.println("Sueldo Neto:" + e.calcularSueldoNeto());
         }
     }
 }
